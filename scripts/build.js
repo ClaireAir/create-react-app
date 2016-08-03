@@ -9,15 +9,15 @@
 
 process.env.NODE_ENV = 'production';
 
-var chalk = require('chalk');
-var fs = require('fs');
-var path = require('path');
-var filesize = require('filesize');
-var gzipSize = require('gzip-size').sync;
-var rimrafSync = require('rimraf').sync;
-var webpack = require('webpack');
-var config = require('../config/webpack.config.prod');
-var paths = require('../config/paths');
+const chalk = require('chalk');
+const fs = require('fs');
+const path = require('path');
+const filesize = require('filesize');
+const gzipSize = require('gzip-size').sync;
+const rimrafSync = require('rimraf').sync;
+const webpack = require('webpack');
+const config = require('../config/webpack.config.prod');
+const paths = require('../config/paths');
 
 // Remove all content but keep the directory so that
 // if you're in it, you don't end up in Trash
